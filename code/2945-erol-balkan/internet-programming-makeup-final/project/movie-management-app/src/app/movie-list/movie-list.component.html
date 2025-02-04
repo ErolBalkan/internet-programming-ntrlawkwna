@@ -1,0 +1,10 @@
+<h1>Movie List</h1>
+<ul>
+  <li *ngFor="let movie of movies">
+    <h2>{{ movie.title }} ({{ movie.year }})</h2>
+    <p>Director: {{ movie.director }}</p>
+    <p>Rating: {{ movie.rating }}</p>
+    <p>Genre: {{ movie.genre.join(', ') }}</p>
+    <p>Plot: {{ movie.plot }}</p>
+  </li>
+</ul>
